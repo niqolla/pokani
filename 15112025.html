@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokana</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container" style="margin-top: 10vh">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text" >
+                        <strong>Hello,</strong>
+                        <p>
+                            It's my pleasure to invite you to a diner at my place!
+                        </p>
+                        <p style="text-align: center">
+                            Day: <strong>Sun, 15 Nov 2025</strong>
+                            <br>
+                            Hour: <strong>18:00h</strong>
+                            <br>
+                            Location: <br>
+                            <strong>C/Regent Mendieta 39, Atico 1</strong>
+                            <br><br>
+                        </p>
+                        <p style="text-align: right">
+                            See you there <3<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        let isOpen = false;
+    
+        envelope.addEventListener('click', () => {
+            if (!isOpen) {
+                envelope.classList.add('flap');
+                isOpen = true;
+            }
+        });
+    </script>
+</body>
+</html>
